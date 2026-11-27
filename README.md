@@ -8,3 +8,11 @@ The features I'll be using are split into two groups. Pre-game factors are ratin
 I will be using scikit-learn.
 I will train a regression model, and a random forest model, compare them, and interpret the results
 I would also like to make meaningful visualisations of chess games and graphs, but I need to think what specifically in more detail(I also mean some visualisations of the game board itself, not just data graphs).
+
+## How to run 
+1. Run  '''pip3 install requirements.txt''' in your project folder.
+2. Run '''python data_downloader.py'' in your project folder.
+3. Run '''data_parser.py''' in your project folder. 
+4. Run the jupyter notebook. 
+
+**_NOTE:_** I created the data_downloader.py and data_parser.py scripts to future proof the project, because reading directly from a .pgn file takes a lot of time, and I don't want to do that every time I run the notebook. Also, the program crashes if too much data is loaded at once, so it is is split into different parquet files. For now, I only use a single parquet file, and I still need to figure out how to deal with multiple files at once. 
