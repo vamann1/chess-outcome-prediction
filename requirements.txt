@@ -1,0 +1,9 @@
+chess
+pandas
+numpy
+sklearn
+seaborn
+matplotlib
+beautifulsoup4
+zstandard
+tqdm
